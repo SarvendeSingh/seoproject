@@ -1,6 +1,7 @@
 @media (max-width: 1024px){
     .h1{
-        font-size: 34px;
+        font-size: 45px;
+        line-height: 61px;
     }
     .h2 {
         font-size: 34px;
@@ -13,14 +14,21 @@
 
 @media (max-width: 991px){
     .h1{
-        font-size: 24px;
+        font-size: 40px;
+        line-height: 54px;
     }
     .h2 {
         font-size: 24px;
         margin-bottom: 24px;
     }
+    .banner-img{
+        background-size: contain;
+    }
     .service .row:nth-child(2) {
         margin-top: 24px;
+    }
+    .banner .w-100 img {
+        height: 425px;
     }
     .pad80 {
         padding: 60px 0px;
@@ -52,7 +60,7 @@
         border: 0;
     }
     .navbar {
-        background: #015551;
+        background: #dd7109;
         padding: 14px 0px;
        
     }
@@ -116,24 +124,47 @@
 }
 
 @media (max-width: 767px){
-    .banner .row{
-        flex-direction: column-reverse;
-    }
+  
     
 .container{
     padding: 0px 20px;
 }
 .h1{
     text-align: center;
-    line-height: 38px;
+    line-height: 43px;
+    font-size: 36px;
+}
+.banner-content span {
+    font-size: 16px;
 }
 .banner-content{
     text-align: center;
     align-items: center;
     padding-top: 40px;
 }
+.banner-content p {
+    font-size: 20px;
+}
 button{
     margin-top: 16px;
+}
+.banner .w-100 img {
+    height: 320px;
+}
+.banner::after {   
+    right: unset;
+    width: 22vw;
+    height: 30%;    
+    background-size: contain;
+    background-position: bottom;
+}
+.banner::before {
+    content: "";
+    left: 14px;
+    right: unset;
+    bottom: 0px;
+    width: 50px;
+    height: 20%;
 }
 .about-content {
     padding: 55px 20px;
